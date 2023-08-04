@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+:root {
+    --maincolor: #58257B;
+    --subcolor: #A083B4;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ /* --------------------------SECTION TOP---------------------------  */
+.row {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.top { 
+    padding: 6px 12px;
+}
+/* --------------------------SECTION ADMIN CONTENT--------------------------- */
+.admin-content {
+    padding: 0px 12px;
+}
+.admin-content-left {
+    width: 20%;
+    padding-left: 6px;
+    background-color: #e7e5f8;
+}
+.admin-content-left ul li ul li {
+    padding-left: 20px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.admin-content-left ul li ul li:hover {
+    font-weight: bold;
+    /* background-color: #6894b2; */
+}
+.admin-content-left ul li ul {
+    display: none;
+    padding-left: 30px;
+ 
+}
+.admin-content-left ul li.active ul {
+    display: block;
+}
+.admin-content-left > ul >li >a {
+    font-weight: bold;
+    /* font-family: 'Bona Nova', serif; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+   
+}
+.admin-content-left > ul > li {
+    line-height: 30px;
+    margin-bottom: 20px; 
+    position: relative;
+}
+.admin-content-left > ul > li::before{
+    content: "";
+    position: absolute;
+    top: 33 ;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: hsl(14, 100%, 51%);
+    z-index: 1;
+    transition: all 0.3s ease-in;
+}
+.admin-content-left > ul > li:hover::before{
+    width: 80%;
+}
+
+.admin-content-left > ul > li img {
+  margin-right: 12px;
+  line-height: 22px;
+}
+.admin-content-right {
+    width: 80%;
+    background-color: rgb(232, 231, 231);
+    padding: 12px 12px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+/* --------------------------SLIDER CONTENT--------------------------- */
+.table-content table {
+    width: 100%; 
+}
+.table-content table,th,td {
+    text-align: center;  
+    border: 1px solid #cccc;
+    border-collapse: collapse;
+    padding: 12px 0;
+    font-family: 'Bona Nova', serif; 
+}
+.table-content table tr:hover {
+    background-color: #dad2da;
+    border: 1px solid #cccc;
+}
+
+.table-content table img {
+    width: 200px;
+}
+.table-add-content input {
+    margin: 30px 0;
+}
+.admin-btn {
+    display: block;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(238, 222, 222);
+    color: rgb(26, 24, 24);
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #21628d;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.admin-btn:hover {
+    background-color: rgb(167, 172, 214); 
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(78, 68, 150);;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.slider-edit img {
+    width: 150px;
+}
+/* ------------cartegory-add-content---------------- */
+.cartegory-add-content input {
+    outline: none;
+    padding-left: 6px;
+    height: 30px;
+}
+.cartegory-add-content label {
+    font-size: 18px;
+}
+.cartegory-add-content input {
+    margin-top: 15px;
+    width: 300px;
+    height: 35px;
+}
+.button_themdanhmuc {
+    width: 160px;
+    height: 40px;
+    margin-top: 30px;
+    /* background-color: transparent; */
+    background-color: rgb(238, 222, 222);
+    color: rgb(26, 24, 24);
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #21628d;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.button_themdanhmuc a {
+    font-family: 'Bona Nova', serif;
+    color: black;
+    font-size: 15px;
+}
+.button_themdanhmuc:hover { 
+    /* background-color: transparent; */
+    background-color: rgb(167, 172, 214); 
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(78, 68, 150);;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+/* ------------sub-cartegory-add-content---------------- */
+.subcartegory-input {
+    outline: none;
+    padding-left: 6px;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.subcartegory-add-content select {
+    outline: none;
+    padding-left: 6px;
+    height: 35px;
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.subcartegory-add-content input {
+    outline: none;
+    padding-left: 6px;
+    height: 35px;
+    width: 300px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.subcartegory-add-content label {
+    font-size: 18px;
+}
+/* ------------------------product-add-content----------- */
+.product-add-content input {
+    outline: none;
+    outline: none;
+    padding-left: 6px;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.product-add-content label {
+    display: block;
+}
+.product-add-content select{
+    outline: none;
+    padding-left: 6px;
+    height: 30px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.product-add-content textarea {
+    outline: none;
+    padding: 6px;
+    width: 500px;
+}
+/* ---------------------------css trang Admin------------------------- */
+
+.header-top-left p {
+    font-family: 'Otomanopee One', sans-serif;
+    color: var(--maincolor);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 5px
+}
+.header-top-left {
+    margin-bottom: 30px;
+}
+/* ---------------------------css trang login------------------------- */
+/* .login {
+    height: 100vh;
+    width: 100vw;
+    background-color: #83a0b4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.login-form {
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+   border-radius: 10px;
+   padding: 50px 30px;
+}
+.login-form h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #83a0b4;
+
+    
+}
+.login-form input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 12px;
+    outline: none;
+    padding-left: 12px;
+    border-radius: 5px;
+    border: 1px solid #83a0b4;
+}
+.login-form button {
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    outline: none;
+    border: 1px solid #58257B;
+    border-radius: 5px;
+}
+.login-form button:hover {
+    background-color: #36698b;
+    border: 1px solid #790505;
+    color: #ffffff;
+    border: none;
+}
+
+} */
+
+.admin-content-right-bg {
+    width: 100%;
+    height: 100%;
+}
+.admin-content-right-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.logina {
+    background: linear-gradient(#263249, #364c64);
+    width: auto;
+    height: 709px;
+}
+
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    background: linear-gradient(#141e30, #243b55);
+    font-family: sans-serif;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #3a6669;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  .login-box a button{  
+      background: transparent   ;
+     border: none;
+     font-size: 15px; 
+     font-family: sans-serif;
+     color: #fff;
+  }
+  .login-box a button:hover{  
+    cursor: pointer;
+  }
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
